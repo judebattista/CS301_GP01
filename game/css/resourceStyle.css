@@ -1,0 +1,32 @@
+/* Name: css .background element
+   Purpose: Apply auto-scalaing image/color designs to background of a webpage.
+   Instruction: Attatch to a div tag with class "background" containing the body in html. 
+*/
+
+.background { 
+    height: 100%;                                      /* Set the block height and width to 100% of the page */
+    width: 100%;
+    position: fixed;                                   /* Set position to fixed relative to the browser window. */
+    top: 0;                                            /* Use top and left set to 0 so that the image/color goes all the way to the absolute edge of the screen. */
+    left: 0;
+    background-image: url("../images/dinoFootprints.jpg"); /* Add an image as the webpage background in body. */
+    background-color: #cccccc;                       /* Set background color (in case image fails to load in browser.) */
+    background-size: cover;                            /* Fill the entire block with an image or color, stretch to fit and update image on resize screen(does not preserve aspect ratio!) */
+}
+
+/* Name: css .linkMenu element
+   Purpose: Make a nice, spaced menu for a tag's list.
+   Instruction: Attatch to a tag with class "linkMenu" for a menu with background and thick border. 
+*/
+
+.linkMenu {
+    display: table;                             /* Set display to table format and make box fit the contents (see references). */
+    margin: auto;                               /* Margin size. To center, set to auto*/
+    padding: 15px;                              /* Set padding. This effects the text distance from border. */
+    border: 30px solid rgb(0, 0, 0);          /* Set border color and thickness. */
+    background-color: rgba(48, 178, 238, 0.9); /* Set menu color to specified. last number is for transparency. */
+}
+
+body h1{
+    text-align: center; /* Center the main heading. */
+}
