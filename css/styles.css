@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(220,220,220);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+  color: darkred;
+  text-align: center;
+  /*
+  text-decoration: darkred underline;
+  */
+}
+
+.blackUnderline {
+  text-decoration: black underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.explosions {
+  color: red;
+  font-weight: bolder;
+}
+
+.floatRight {
+  float: right;
+}
+
+.leftMenu {
+  border-color: black;
+  border-style: solid;
+  border-width: 3px 3px 3px 3px;
+  float: left;
+  margin: 10px 20px 10px 10px;
+  min-width: 200px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  text-align: center;
+  top: 0;
+  width: 15%;
+}
+
+.medImage {
+  width: 20%;
+}
+
+.leftMenuButton {
+  display: inline-block;
+}
+
+.leftMenuHeader {
+  color: darkred;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.mainContent {
+  display: inline-block;
+  width: 80%;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
