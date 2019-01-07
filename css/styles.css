@@ -23,9 +23,11 @@ div {
 
 }
 
-h2 {
+header {
   color: darkred;
-  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;  
 }
 
 .blackUnderline {
