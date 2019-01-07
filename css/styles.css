@@ -80,7 +80,7 @@ header {
 }
 
 .leftMenuButton:active {
-
+  background-color: darkred;
 }
 
 .leftMenuHeader {
