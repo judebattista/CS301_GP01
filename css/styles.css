@@ -1,15 +1,25 @@
 body {
-  background-color: rgb(220,220,220);
+  background-color: rgba(220,220,220, 0.5);
   color: rgb(24, 24, 43);
   font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+  opacity: 1;
+
 }
 
 h2 {
   color: darkred;
   text-align: center;
-  /*
-  text-decoration: darkred underline;
-  */
+}
+
+.bgImage {
+  background-attachment: fixed;
+  /*background-blend-mode: lighten;*/
+  background-image: url("../Graphics/character2.png");
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .blackUnderline {
@@ -43,15 +53,12 @@ h2 {
   width: 15%;
 }
 
-.medImage {
-  width: 20%;
-}
-
 .leftMenuButton {
   background-color: darkred;
   border-radius: 10px;
   color: rgb(220, 220, 220);
   display: inline-block;
+  font-weight: bold;
   height: 2em;
   line-height: 2em;
   text-decoration: none;
@@ -68,6 +75,10 @@ h2 {
 .mainContent {
   display: inline-block;
   width: 80%;
+}
+
+.medImage {
+  width: 20%;
 }
 
 .strikethrough {
