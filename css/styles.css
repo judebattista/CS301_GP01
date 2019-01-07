@@ -74,6 +74,15 @@ header {
   vertical-align: center;
 }
 
+/*TODO: add hover and active effects to buttons*/
+.leftMenuButton:hover {
+  background-color: red;
+}
+
+.leftMenuButton:active {
+
+}
+
 .leftMenuHeader {
   color: darkred;
   font-size: 1.5em;
