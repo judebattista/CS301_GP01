@@ -1,5 +1,6 @@
 body {
   background-color: rgb(220,220,220);
+  color: rgb(24, 24, 43);
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -29,9 +30,9 @@ h2 {
 }
 
 .leftMenu {
-  border-color: black;
+  border-color: rgb(24, 24, 43);
   border-style: solid;
-  border-width: 3px 3px 3px 3px;
+  border-width: 0px 3px 0px 0px;
   float: left;
   margin: 10px 20px 10px 10px;
   min-width: 200px;
@@ -47,7 +48,15 @@ h2 {
 }
 
 .leftMenuButton {
+  background-color: darkred;
+  border-radius: 10px;
+  color: rgb(220, 220, 220);
   display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  text-decoration: none;
+  width: 80%;
+  vertical-align: center;
 }
 
 .leftMenuHeader {
