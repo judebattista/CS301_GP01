@@ -1,3 +1,9 @@
+body,ul,li{
+  margin:0;
+  padding:0;
+  border:0;
+}
+
 body {
   background-color: rgba(220,220,220);
   color: rgb(24, 24, 43);
@@ -5,6 +11,7 @@ body {
   font-size: 14;
   font-weight: 400;
 }
+
 
 body:before {
   content: "";
@@ -49,31 +56,26 @@ header {
   float: right;
 }
 
-.leftMenu {
-  border-color: rgb(24, 24, 43);
-  border-style: solid;
-  border-width: 0px 3px 0px 0px;
-  float: left;
-  margin: 10px 20px 10px 10px;
-  min-width: 200px;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  text-align: center;
-  top: 0;
-  width: 15%;
+nav ul{
+  background-color:darkred;
+  list-style: none;
+  display: inline-block;
+  width:100%;
+  z-index:99;
+}
+
+nav ul li{
+  float:left;
+  position:relative;
+  background:none;
 }
 
 .leftMenuButton {
-  background-color: darkred;
-  border-radius: 10px;
-  color: rgb(220, 220, 220);
-  display: inline-block;
-  font-weight: bold;
-  height: 2em;
-  line-height: 2em;
+  display:block;
+  padding: 15px;
+  color:white;
+  font-weight:bold;
   text-decoration: none;
-  width: 80%;
-  vertical-align: center;
 }
 
 /*TODO: add hover and active effects to buttons*/
@@ -82,7 +84,7 @@ header {
 }
 
 .leftMenuButton:active {
-  background-color: darkred;
+  background-color: red;
 }
 
 .leftMenuHeader {
@@ -93,16 +95,12 @@ header {
 
 .logo {
   margin-right: 20px;
-
 }
 
 .mainContent {
   display: inline-block;
-  width: 80%;
-}
-
-.medImage {
-  width: 20%;
+  width:80%;
+  padding-inline-start: 1%;
 }
 
 .strikethrough {
