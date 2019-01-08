@@ -89,6 +89,7 @@ nav ul {
 
 /* any unordered list item in the nav element */
 nav ul li {
+  border-color: rgb(50, 20, 20);
   border-style: solid;
   border-width: 0 0 1px 0;
   display: inline-block;
@@ -96,7 +97,7 @@ nav ul li {
 }
 
 /* if we hover over a list item with an anchor in it */
-/*
+/* Or we could do nothing to the li
 nav ul li:hover {
   background-color: darkred;
   border-style: none;
@@ -104,21 +105,10 @@ nav ul li:hover {
 }
 */
 
-/*... and format the link text color as well */
+/*... and format the link as well */
 nav ul li a:hover {
   /*color: rgb(240, 240, 240);*/
   text-shadow: -1px -1px #CCCCCC;
-}
-
-nav ul li:active {
-  background-color: darkred;
-  border-style: none;
-  border-radius: 5px;
-}
-
-/* if we hover over a list item with an anchor in it */
-nav ul li a:active {
-  color: rgb(240, 240, 240);
 }
 
 nav a {
