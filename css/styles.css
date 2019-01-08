@@ -96,15 +96,18 @@ nav ul li {
 }
 
 /* if we hover over a list item with an anchor in it */
+/*
 nav ul li:hover {
   background-color: darkred;
   border-style: none;
   border-radius: 5px;
 }
+*/
 
 /*... and format the link text color as well */
 nav ul li a:hover {
-  color: rgb(240, 240, 240);
+  /*color: rgb(240, 240, 240);*/
+  text-shadow: -1px -1px #CCCCCC;
 }
 
 nav ul li:active {
@@ -120,7 +123,7 @@ nav ul li a:active {
 
 nav a {
   color: darkred;
-  font-size: 1.25em;
+  font-size: 1.2em;
   font-weight: bolder;
   padding: 5px;
   text-decoration: darkred;
