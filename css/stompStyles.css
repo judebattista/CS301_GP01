@@ -1,0 +1,174 @@
+/* Default to no padding */
+ul, li {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+article {
+  margin: auto;
+  width: 80%;
+}
+
+article:before {
+  content: "";
+  position: fixed;
+  top: 5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(../Graphics/character2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+}
+
+body {
+  background-color: rgba(240,240,240, 1);
+  /*
+  background-color: rgba(220,220,220, 1);
+  */
+  color: rgb(24, 24, 43);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
+  font-weight: 450;
+  position: flex;
+  justify-content: center;
+}
+
+header {
+  align-items: center;
+  color: darkred;
+  display: flex;
+  font-size: 2em;
+  font-weight: bolder;
+  justify-content: flex-start;
+}
+
+.blackUnderline {
+  text-decoration: black underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.explosions {
+  color: red;
+  font-weight: bolder;
+}
+
+.floatRight {
+  float: right;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.medImage {
+  width: 20%;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+/* Menu styles */
+/* Any unordered list in the nav element */
+nav {
+  margin: auto;
+  width: 80%;
+}
+
+nav ul {
+  background-color: rgba(220,220,220, 0);
+  list-style: none;
+}
+
+/* any unordered list item in the nav element */
+nav ul li {
+  border-color: rgb(50, 20, 20);
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  display: inline-block;
+  margin-right: 5em;
+}
+
+/* if we hover over a list item with an anchor in it */
+/* Or we could do nothing to the li
+nav ul li:hover {
+  background-color: darkred;
+  border-style: none;
+  border-radius: 5px;
+}
+*/
+
+/*... and format the link as well */
+nav ul li a:hover {
+  /*color: rgb(240, 240, 240);*/
+  text-shadow: -1px -1px #CCCCCC;
+}
+
+nav a {
+  color: darkred;
+  font-size: 1.2em;
+  font-weight: bolder;
+  padding: 5px;
+  text-decoration: darkred;
+}
+
+.dummy {
+  color: darkred;
+}
+
+@keyframes stomp {
+  from {opacity: 0;}
+  to {opacity: .3;}
+
+}
+
+.stompImage:hover::before {
+  animation-name: stomp;
+  animation-duration: 0.3s;
+  background-image: url(../Graphics/logo2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 3em;
+  margin: auto;
+  opacity: .3;
+  position: fixed;
+  width: 3em;
+  z-index: -1;
+  
+}
+
+@keyframes stompImage {
+  from {opacity: 0; display: none;}
+  to {opacity: .3; display: flex }
+
+}
+
+img.bg {
+  display: flex;
+  opacity: 0.3;
+  position: flex;
+  align-self: center;
+  margin: auto;
+  height: 3em;
+  width: 3em;
+  transform: translate(3em, 1em);
+}
+
+img.bg:hover {
+  animation-name: stompImage;
+  animation-duration: 0.3s;
+}
+
+.menuItemContainer {
+  position: flex;
+
+}

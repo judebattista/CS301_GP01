@@ -1,26 +1,48 @@
-body {
-  background-color: rgba(220,220,220);
-  color: rgb(24, 24, 43);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 14;
-  font-weight: 400;
+/* Default to no padding */
+body, ul, li {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-body:before {
+html, body {
+  height: 100%;
+}
+
+header, article, footer {
+  flex-shrink:0;
+}
+
+article {
+  flex-grow: 1;
+  margin: auto;
+  width: 80%;
+  padding: 0 0 2rem 0;
+}
+
+article:before {
   content: "";
   position: fixed;
-  top: 0;
+  top: 5%;
   bottom: 0;
-  left: -100px;
+  left: 0;
   right: 0;
   z-index: -1;
   background-image: url(../Graphics/character2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   opacity: 0.07;
 }
 
-div {
-  opacity: 1;
-
+body {
+  background-color: rgba(240,240,240, 1);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1em;
+  font-weight: 450;
+  position: flex;
+  justify-content: center;
 }
 
 header {
@@ -29,15 +51,48 @@ header {
   display: flex;
   font-size: 2em;
   font-weight: bolder;
-  justify-content: center;  
+  justify-content: center;
+  width: 100%;
 }
 
-.blackUnderline {
-  text-decoration: black underline;
+footer {
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  align-self: flex-end;
+  font-size: .9rem;
+  height: 2rem;
+  margin-top: auto;
+  padding: .8rem 0 .8rem 0;
+  width: 100%;
 }
 
-.bold {
-  font-weight: bold;
+footer ul {
+  display: flex;
+  list-style: none;
+  margin: auto;
+}
+
+footer ul li {
+  display: flex;
+  margin: auto;
+  padding: 0 1rem;
+
+}
+
+footer ul li a {
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+}
+
+div.charImg {
+  align-items: center;
+  display: flex;
+  height: 10rem;
+  width: auto;
+}
+
+div.charImg img {
+  max-height: 100%;
 }
 
 .explosions {
@@ -49,62 +104,68 @@ header {
   float: right;
 }
 
-.leftMenu {
-  border-color: rgb(24, 24, 43);
-  border-style: solid;
-  border-width: 0px 3px 0px 0px;
-  float: left;
-  margin: 10px 20px 10px 10px;
-  min-width: 200px;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  text-align: center;
-  top: 0;
-  width: 15%;
-}
-
-.leftMenuButton {
-  background-color: darkred;
-  border-radius: 10px;
-  color: rgb(220, 220, 220);
-  display: inline-block;
-  font-weight: bold;
-  height: 2em;
-  line-height: 2em;
-  text-decoration: none;
-  width: 80%;
-  vertical-align: center;
-}
-
-/*TODO: add hover and active effects to buttons*/
-.leftMenuButton:hover {
-  background-color: red;
-}
-
-.leftMenuButton:active {
-  background-color: darkred;
-}
-
-.leftMenuHeader {
-  color: darkred;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 .logo {
   margin-right: 20px;
-
-}
-
-.mainContent {
-  display: inline-block;
-  width: 80%;
-}
-
-.medImage {
-  width: 20%;
 }
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+/* Menu styles */
+/* Any unordered list in the nav element */
+nav {
+  background-color: darkred;
+  margin: auto;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  align-items: center;
+  list-style: none;
+  padding: 0 0 0 5%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* any unordered list item in the nav element */
+nav ul li {
+  align-items: center;
+  display: flex;
+  padding: 0 1.5rem 0 1.5rem;
+  height: 3.5rem;
+}
+
+nav ul li a {
+  color: rgb(240, 240, 240);
+  display: flex;
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: transform .3s;
+}
+
+/*... and format the link as well */
+nav ul li a:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* Style the link for the current page to permit the user to know where they are 
+  darkred = #8B0000 = rgb(139, 0, 0)
+*/
+nav ul li.activePage {
+  background-color: rgb(240, 240, 240);
+}
+
+nav ul li.activePage a {
+  color: darkred;
+  cursor: default;
+}
+
+nav ul li.activePage a:hover {
+  color: darkred;
+  background-color: rgb(240, 240, 240);
+  font-size: 1.2em;
 }
