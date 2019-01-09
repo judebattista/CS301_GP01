@@ -167,5 +167,5 @@ nav ul li.activePage a {
 nav ul li.activePage a:hover {
   color: darkred;
   background-color: rgb(240, 240, 240);
-  font-size: 1.2em;
+  transform: none;
 }
