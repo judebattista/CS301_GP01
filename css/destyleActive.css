@@ -115,12 +115,12 @@ nav a {
   darkred = #8B0000 = rgb(139, 0, 0)
 */
 nav ul li.activePage {
-  background-image: linear-gradient(to bottom right, rgb(255,70,70),rgb(139,0,0));
-  border-color: darkred;
+  background-image: none;
+  border: none;
+  color: darkred;
 }
 
 nav ul li.activePage a {
-  color: rgb(210, 210, 210);
   cursor: default;
 }
 
