@@ -145,3 +145,30 @@ nav a {
   z-index: -1;
   
 }
+
+@keyframes stompImage {
+  from {opacity: 0; display: none;}
+  to {opacity: .3; display: flex }
+
+}
+
+img.bg {
+  display: flex;
+  opacity: 0.3;
+  position: flex;
+  align-self: center;
+  margin: auto;
+  height: 3em;
+  width: 3em;
+  transform: translate(3em, 1em);
+}
+
+img.bg:hover {
+  animation-name: stompImage;
+  animation-duration: 0.3s;
+}
+
+.menuItemContainer {
+  position: flex;
+
+}
