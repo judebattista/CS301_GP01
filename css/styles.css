@@ -5,9 +5,19 @@ body, ul, li {
   padding: 0px;
 }
 
+html, body {
+  height: 100%;
+}
+
+header, article, footer {
+  flex-shrink:0;
+}
+
 article {
+  flex-grow: 1;
   margin: auto;
   width: 80%;
+  padding: 0 0 2rem 0;
 }
 
 article:before {
@@ -26,6 +36,8 @@ article:before {
 
 body {
   background-color: rgba(240,240,240, 1);
+  display: flex;
+  flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1.1em;
   font-weight: 450;
@@ -45,25 +57,24 @@ header {
 
 footer {
   background-color: rgb(50, 50, 50);
-  bottom: 0;
   display: flex;
+  align-self: flex-end;
   font-size: .9rem;
   height: 2rem;
-  justify-self: flex-end;
-  justify-content: center;
+  margin-top: auto;
   padding: .8rem 0 .8rem 0;
-  position: absolute;
   width: 100%;
 }
 
 footer ul {
   display: flex;
-  align-items: center;
   list-style: none;
+  margin: auto;
 }
 
 footer ul li {
   display: flex;
+  margin: auto;
   padding: 0 1rem;
 
 }
@@ -71,6 +82,15 @@ footer ul li {
 footer ul li a {
   color: rgb(240, 240, 240);
   text-decoration: none;
+}
+
+div.charImg {
+  height: 10rem;
+  width: auto;
+}
+
+div.charImg img {
+  max-height: 100%;
 }
 
 .explosions {
