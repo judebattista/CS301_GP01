@@ -85,6 +85,8 @@ footer ul li a {
 }
 
 div.charImg {
+  align-items: center;
+  display: flex;
   height: 10rem;
   width: auto;
 }
